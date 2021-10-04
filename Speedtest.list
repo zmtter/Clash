@@ -6,8 +6,8 @@
 # USER-AGENT: 1
 # DOMAIN-KEYWORD: 1
 # TOTAL: 5
-DOMAIN-SUFFIX,fast.com,Speedtest
-DOMAIN-SUFFIX,ooklaserver.net,Speedtest
-DOMAIN-SUFFIX,speed.cloudflare.com,Speedtest
-DOMAIN-KEYWORD,speedtest,Speedtest
-USER-AGENT,SpeedTest*,Speedtest
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,speed.cloudflare.com
+DOMAIN-KEYWORD,speedtest
+USER-AGENT,SpeedTest*
