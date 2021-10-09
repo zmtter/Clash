@@ -1,10 +1,15 @@
-# 电脑日常使用
+# 跨境金融
+DOMAIN-SUFFIX,webmoney.ru
+DOMAIN-KEYWORD,webmoney
 DOMAIN-SUFFIX,advcash.com
 DOMAIN-SUFFIX,wallet.advcash.com
 DOMAIN-SUFFIX,wise.com
 DOMAIN-KEYWORD,wise
 DOMAIN-KEYWORD,eastwest
 DOMAIN-KEYWORD,velo
+
+
+# 电脑日常使用
 DOMAIN-KEYWORD,payoneer
 DOMAIN-KEYWORD,jianguoyun
 DOMAIN-KEYWORD,flomo
@@ -14,3 +19,4 @@ DOMAIN-KEYWORD,highso
 DOMAIN-KEYWORD,haixue
 DOMAIN-SUFFIX,haixue.com
 DOMAIN-SUFFIX,wiz.cn
+
