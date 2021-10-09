@@ -10,3 +10,6 @@ DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,aca.nflxvideo.net
 
 # 其他
+DOMAIN-SUFFIX,ip111.cn
+DOMAIN-KEYWORD,ip111
+DOMAIN-SUFFIX,bgp.he.net
