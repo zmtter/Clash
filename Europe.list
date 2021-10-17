@@ -17,8 +17,8 @@ DOMAIN-KEYWORD,wise
 DOMAIN-SUFFIX,authy.com
 DOMAIN-KEYWORD,wise
 DOMAIN-SUFFIX,webmoney.ru
-HOST-SUFFIX,wmtransfer.com
-HOST-SUFFIX,web.money
+DOMAIN-SUFFIX,wmtransfer.com
+DOMAIN-SUFFIX,web.money
 DOMAIN-KEYWORD,webmoney
 DOMAIN-SUFFIX,advcash.zendesk.com
 DOMAIN-SUFFIX,advcash.com
