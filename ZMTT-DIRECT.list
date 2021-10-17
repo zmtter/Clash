@@ -1,11 +1,10 @@
 # 跨境金融
-DOMAIN-SUFFIX,webmoney.ru
-DOMAIN-KEYWORD,webmoney
-DOMAIN-SUFFIX,advcash.zendesk.com
-DOMAIN-SUFFIX,advcash.com
-DOMAIN-SUFFIX,wallet.advcash.com
+DOMAIN-SUFFIX,remitly.com
 DOMAIN-KEYWORD,eastwest
-DOMAIN-KEYWORD,velo
+DOMAIN-SUFFIX,eastwest.com
+DOMAIN-KEYWORD,velobank
+DOMAIN-SUFFIX,velobank.com
+DOMAIN-KEYWORD,payoneer
 
 
 # 电脑日常使用
