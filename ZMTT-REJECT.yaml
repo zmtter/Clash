@@ -1,4 +1,4 @@
 payload:
-# 极光插件
+  # 极光插件
   - DOMAIN-KEYWORD,jiguang
   - DOMAIN-KEYWORD,jpush

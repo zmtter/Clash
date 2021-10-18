@@ -1,5 +1,5 @@
 payload:
-# 跨境金融
+  # 跨境金融
   - DOMAIN-SUFFIX,remitly.com
   - DOMAIN-KEYWORD,eastwest
   - DOMAIN-SUFFIX,eastwest.com
@@ -8,7 +8,7 @@ payload:
   - DOMAIN-KEYWORD,payoneer
 
 
-# 电脑日常使用
+  # 电脑日常使用
   - DOMAIN-KEYWORD,payoneer
   - DOMAIN-KEYWORD,jianguoyun
   - DOMAIN-KEYWORD,flomo

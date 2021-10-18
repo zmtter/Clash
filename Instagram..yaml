@@ -1,6 +1,5 @@
 payload:
-# 内容：Instagram
-# 数量：4条
+  # Instagram
   - DOMAIN-KEYWORD,instagram
   - DOMAIN-SUFFIX,cdninstagram.com
   - DOMAIN-SUFFIX,instagr.am

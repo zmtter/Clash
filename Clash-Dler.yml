@@ -927,7 +927,7 @@ rule-providers:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Reject.yaml
-    path: ./Rules/拦截净化-lhie1
+    path: ./Rules/AdBlocklhie1
     interval: 86400
 
   拦截净化-ZMTT:
@@ -941,168 +941,168 @@ rule-providers:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/zmtter/Clash/main/ZMTT-DIRECT.yaml
-    path: ./Rules/国内直连-ZMTT
+    path: ./Rules/DIRECT_ZMTT
     interval: 86400
 
   网速测试:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/zmtter/Clash/main/Speedtest.yaml
-    path: ./Rules/网速测试
+    path: ./Rules/SpeedTest
     interval: 86400
 
   欧洲金融:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/zmtter/Clash/main/Europe.yml
-    path: ./Rules/欧洲金融
+    path: ./Rules/Europe
     interval: 86400
 
   贝宝支付:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/PayPal.yaml
-    path: ./Rules/贝宝支付
+    path: ./Rules/PayPal
     interval: 86400
 
   谷歌服务-Google:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Google.yaml
-    path: ./Rules/谷歌服务-Google
+    path: ./Rules/Google_Google
     interval: 86400
 
   谷歌服务-GoogleCN:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml
-    path: ./Rules/谷歌服务-GoogleFCM
+    path: ./Rules/Google_GoogleFCM
     interval: 86400
 
   谷歌服务-GoogleFCM:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml
-    path: ./Rules/谷歌服务-GoogleFCM
+    path: ./Rules/Google_GoogleFCM
     interval: 86400
 
   苹果服务:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Apple.yaml
-    path: ./Rules/苹果服务
+    path: ./Rules/Apple
     interval: 86400
 
   苹果服务-News:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Apple%20News.yaml
-    path: ./Rules/Media/苹果服务-News
+    path: ./Rules/Media/Apple_News
     interval: 86400
   
   苹果服务-TV:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Apple%20TV.yaml
-    path: ./Rules/Media/苹果服务-TV
+    path: ./Rules/Media/Apple_TV
     interval: 86400
 
   微软服务:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Microsoft.yaml
-    path: ./Rules/微软服务
+    path: ./Rules/Microsoft
     interval: 86400
 
   奈飞影视:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Netflix.yaml
-    path: ./Rules/Media/奈飞影视
+    path: ./Rules/Media/Netflix
     interval: 86400
 
   油管视频:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/YouTube.yaml
-    path: ./Rules/Media/油管视频
+    path: ./Rules/Media/YouTube
     interval: 86400
 
   海外抖音:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/zmtter/Clash/main/TikTok.yaml
-    path: ./Rules/海外抖音
+    path: ./Rules/TikTok
     interval: 86400
 
   彩色相机:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/zmtter/Clash/main/Instagram.yaml
-    path: ./Rules/Media/彩色相机
+    path: ./Rules/Media/Instagram
     interval: 86400
 
   私密电报:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
-    path: ./Rules/私密电报
+    path: ./Rules/Telegram
     interval: 86400
 
   拦截净化-BanAD:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
-    path: ./Rules/私密电报
+    path: ./Rules/AdBlock
     interval: 86400
 
   拦截净化-BanEasyList:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml
-    path: ./Rules/私密电报
+    path: ./Rules/AdBlock
     interval: 86400
 
   拦截净化-BanProgramAD:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
-    path: ./Rules/私密电报
+    path: ./Rules/AdBlock
     interval: 86400
 
   拦截净化-BanEasyPrivacy:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml
-    path: ./Rules/私密电报
+    path: ./Rules/AdBlock
     interval: 86400
 
   拦截净化-BanEasyListChina:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
-    path: ./Rules/私密电报
+    path: ./Rules/AdBlock
     interval: 86400
 
   国内网站:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Domestic.yaml
-    path: ./Rules/国内网站
+    path: ./Rules/China
     interval: 86400
 
   国内网站-IPs:
     type: http
     behavior: ipcidr
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Domestic%20IPs.yaml
-    path: ./Rules/国内网站-IPs
+    path: ./Rules/China_IPs
     interval: 86400
 
   成人视频 Plus:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/zmtter/Clash/main/Pornhub.yml
-    path: ./Rules/Media/成人视频-Plus
+    path: ./Rules/Media/Sexing
     interval: 86400
 
   Bilibili:

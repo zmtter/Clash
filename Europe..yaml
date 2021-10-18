@@ -1,5 +1,5 @@
 payload:
-# 需要使用欧洲ip的金融网站
+  # 需要使用欧洲ip的金融网站
   - DOMAIN-SUFFIX,rewire.com
   - DOMAIN-KEYWORD,rewire
   - DOMAIN-SUFFIX,n26.com
