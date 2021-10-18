@@ -4,7 +4,6 @@ payload:
   - DOMAIN-SUFFIX,speed.cloudflare.com
   - DOMAIN-KEYWORD,speedtest
   - DOMAIN-KEYWORD,veeapps
-  - USER-AGENT,SpeedTest*
 
   # fast
   - DOMAIN-SUFFIX,fast.com
