@@ -771,14 +771,14 @@ proxy-groups:
 
 
 rules:
-- RULE-SET,国内直连-ZMTT,DIRECT
+- RULE-SET,国内直连_ZMTT,DIRECT
 - RULE-SET,网速测试,网速测试
 - RULE-SET,网速测试,网速测试
 - RULE-SET,欧洲金融,欧洲金融
 - RULE-SET,贝宝支付,贝宝支付
-- RULE-SET,谷歌服务-Google,谷歌服务
-- RULE-SET,谷歌服务-GoogleCN,谷歌服务
-- RULE-SET,谷歌服务-GoogleFCM,谷歌服务
+- RULE-SET,谷歌,谷歌服务
+- RULE-SET,谷歌CN,谷歌服务
+- RULE-SET,谷歌FCM,谷歌服务
 - RULE-SET,苹果服务,苹果服务
 - RULE-SET,奈飞影视,奈飞影视
 - RULE-SET,油管视频,油管视频
@@ -786,27 +786,27 @@ rules:
 - RULE-SET,彩色相机,彩色相机
 - RULE-SET,私密电报,私密电报
 - RULE-SET,国内网站,国内网站
-- RULE-SET,国内网站-IPs,国内网站
-- RULE-SET,拦截净化-lhie1,拦截净化
-- RULE-SET,拦截净化-ZMTT,拦截净化
-- RULE-SET,拦截净化-BanAD,拦截净化
-- RULE-SET,拦截净化-BanEasyList,拦截净化
-- RULE-SET,拦截净化-BanProgramAD,拦截净化
-- RULE-SET,拦截净化-BanEasyPrivacy,拦截净化
-- RULE-SET,拦截净化-BanEasyListChina,拦截净化
+- RULE-SET,国内网站_IPs,国内网站
+- RULE-SET,拦截净化_lhie1,拦截净化
+- RULE-SET,拦截净化_ZMTT,拦截净化
+- RULE-SET,拦截净化_BanAD,拦截净化
+- RULE-SET,拦截净化_BanEasyList,拦截净化
+- RULE-SET,拦截净化_BanProgramAD,拦截净化
+- RULE-SET,拦截净化_BanEasyPrivacy,拦截净化
+- RULE-SET,拦截净化_BanEasyListChina,拦截净化
 - RULE-SET,微软服务,微软服务
 - RULE-SET,Bilibili,国内影视
 - RULE-SET,iQiyi,国内影视
 - RULE-SET,Letv,国内影视
-- RULE-SET,Netease-Music,国内影视
-- RULE-SET,Tencent-Video,国内影视
+- RULE-SET,Netease_Music,国内影视
+- RULE-SET,Tencent_Video,国内影视
 - RULE-SET,Youku,国内影视
 - RULE-SET,WeTV,国内影视
 - RULE-SET,ABC,国外影视
 - RULE-SET,Abema TV,国外影视
 - RULE-SET,Amazon,国外影视
-- RULE-SET,苹果服务-News,国外影视
-- RULE-SET,苹果服务-TV,国外影视
+- RULE-SET,苹果服务_News,国外影视
+- RULE-SET,苹果服务_TV,国外影视
 - RULE-SET,Bahamut,国外影视
 - RULE-SET,BBC-iPlayer,国外影视
 - RULE-SET,DAZN,国外影视
@@ -828,9 +828,9 @@ rules:
 - RULE-SET,Pornhub,国外影视
 - RULE-SET,Soundcloud,国外影视
 - RULE-SET,ViuTV,国外影视
-- RULE-SET,成人视频 Plus,成人视频
+- RULE-SET,成人视频,成人视频
 - RULE-SET,LAN,DIRECT
-- GEOIP,CN,国内网站
+- GEOIP,CN,DIRECT
 - MATCH,漏网之鱼
 
 
@@ -838,24 +838,24 @@ rules:
 script:
   code: |
     def main(ctx, metadata):
-        ruleset_action = {"拦截净化-lhie1": "拦截净化",
-            "国内直连-ZMTT": "DIRECT",
+        ruleset_action = {"拦截净化_lhie1": "拦截净化",
+            "国内直连_ZMTT": "DIRECT",
             "奈飞影视": "奈飞影视",
             "彩色相机": "彩色相机",
             "油管视频": "油管视频",
-            "成人视频 Plus": "成人视频",
+            "成人视频": "成人视频",
             "Bilibili": "国内影视",
             "iQiyi": "国内影视",
             "Letv": "国内影视",
-            "Netease-Music": "国内影视",
-            "Tencent-Video": "国内影视",
+            "Netease_Music": "国内影视",
+            "Tencent_Video": "国内影视",
             "Youku": "国内影视",
             "WeTV": "国内影视",
             "ABC": "国外影视",
             "Abema TV": "国外影视",
             "Amazon": "国外影视",
-            "苹果服务-News": "国外影视",
-            "苹果服务-TV": "国外影视",
+            "苹果服务_News": "国外影视",
+            "苹果服务_TV": "国外影视",
             "Bahamut": "国外影视",
             "BBC-iPlayer": "国外影视",
             "DAZN": "国外影视",
@@ -886,7 +886,7 @@ script:
             "苹果服务": "苹果服务",
             "欧洲金融": "欧洲金融",
             "国内网站": "国内网站",
-            "国内网站-IPs": "国内网站",
+            "国内网站_IPs": "国内网站",
             "LAN": "DIRECT"
           }
 
@@ -923,24 +923,24 @@ script:
 
 rule-providers:
 
-  拦截净化-lhie1:
+  拦截净化_lhie1:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Reject.yaml
     path: ./Rules/AdBlocklhie1
     interval: 86400
 
-  拦截净化-ZMTT:
+  拦截净化_ZMTT:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/zmtter/Clash/main/ZMTT-REJECT.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/ZMTT_REJECT.yaml
     path: ./Rules/ZMTT
     interval: 86400
 
-  国内直连-ZMTT:
+  国内直连_ZMTT:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/zmtter/Clash/main/ZMTT-DIRECT.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/ZMTT_DIRECT.yaml
     path: ./Rules/DIRECT_ZMTT
     interval: 86400
 
@@ -954,7 +954,7 @@ rule-providers:
   欧洲金融:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/zmtter/Clash/main/Europe.yml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/Europe.yaml
     path: ./Rules/Europe
     interval: 86400
 
@@ -965,25 +965,25 @@ rule-providers:
     path: ./Rules/PayPal
     interval: 86400
 
-  谷歌服务-Google:
+  谷歌:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Google.yaml
-    path: ./Rules/Google_Google
+    path: ./Rules/Google
     interval: 86400
 
-  谷歌服务-GoogleCN:
+  谷歌CN:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml
-    path: ./Rules/Google_GoogleFCM
+    path: ./Rules/GoogleFCM
     interval: 86400
 
-  谷歌服务-GoogleFCM:
+  谷歌FCM:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml
-    path: ./Rules/Google_GoogleFCM
+    path: ./Rules/GoogleFCM
     interval: 86400
 
   苹果服务:
@@ -993,14 +993,14 @@ rule-providers:
     path: ./Rules/Apple
     interval: 86400
 
-  苹果服务-News:
+  苹果服务_News:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Apple%20News.yaml
     path: ./Rules/Media/Apple_News
     interval: 86400
   
-  苹果服务-TV:
+  苹果服务_TV:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Apple%20TV.yaml
@@ -1049,35 +1049,35 @@ rule-providers:
     path: ./Rules/Telegram
     interval: 86400
 
-  拦截净化-BanAD:
+  拦截净化_BanAD:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
     path: ./Rules/AdBlock
     interval: 86400
 
-  拦截净化-BanEasyList:
+  拦截净化_BanEasyList:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml
     path: ./Rules/AdBlock
     interval: 86400
 
-  拦截净化-BanProgramAD:
+  拦截净化_BanProgramAD:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
     path: ./Rules/AdBlock
     interval: 86400
 
-  拦截净化-BanEasyPrivacy:
+  拦截净化_BanEasyPrivacy:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml
     path: ./Rules/AdBlock
     interval: 86400
 
-  拦截净化-BanEasyListChina:
+  拦截净化_BanEasyListChina:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
@@ -1091,17 +1091,17 @@ rule-providers:
     path: ./Rules/China
     interval: 86400
 
-  国内网站-IPs:
+  国内网站_IPs:
     type: http
     behavior: ipcidr
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Domestic%20IPs.yaml
     path: ./Rules/China_IPs
     interval: 86400
 
-  成人视频 Plus:
+  成人视频:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/zmtter/Clash/main/Pornhub.yml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/Pornhub.yaml
     path: ./Rules/Media/Sexing
     interval: 86400
 
@@ -1123,17 +1123,17 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Letv.yaml
     path: ./Rules/Media/Letv
     interval: 86400
-  Netease-Music:
+  Netease_Music:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Netease%20Music.yaml
-    path: ./Rules/Media/Netease-Music
+    path: ./Rules/Media/Netease_Music
     interval: 86400
-  Tencent-Video:
+  Tencent_Video:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Tencent%20Video.yaml
-    path: ./Rules/Media/Tencent-Video
+    path: ./Rules/Media/Tencent_Video
     interval: 86400
   Youku:
     type: http
@@ -1157,7 +1157,7 @@ rule-providers:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Abema%20TV.yaml
-    path: ./Rules/Media/Abema-TV
+    path: ./Rules/Media/Abema_TV
     interval: 86400
   Amazon:
     type: http
@@ -1172,11 +1172,11 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Bahamut.yaml
     path: ./Rules/Media/Bahamut
     interval: 86400
-  BBC-iPlayer:
+  BBC_iPlayer:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/BBC%20iPlayer.yaml
-    path: ./Rules/Media/BBC-iPlayer
+    path: ./Rules/Media/BBC_iPlayer
     interval: 86400
   DAZN:
     type: http
@@ -1184,11 +1184,11 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/DAZN.yaml
     path: ./Rules/Media/DAZN
     interval: 86400
-  Discovery-Plus:
+  Discovery_Plus:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Discovery%20Plus.yaml
-    path: ./Rules/Media/Discovery-Plus
+    path: ./Rules/Media/Discovery_Plus
     interval: 86400
 
   encoreTVB:
@@ -1197,11 +1197,11 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/encoreTVB.yaml
     path: ./Rules/Media/encoreTVB
     interval: 86400
-  Fox-Now:
+  Fox_Now:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Fox%20Now.yaml
-    path: ./Rules/Media/Fox-Now
+    path: ./Rules/Media/Fox_Now
     interval: 86400
   Fox+:
     type: http
@@ -1219,7 +1219,7 @@ rule-providers:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Hulu%20Japan.yaml
-    path: ./Rules/Media/Hulu-Japan
+    path: ./Rules/Media/Hulu_Japan
     interval: 86400
   Hulu:
     type: http
@@ -1251,17 +1251,17 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/KKTV.yaml
     path: ./Rules/Media/KKTV
     interval: 86400
-  Line-TV:
+  Line_TV:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Line%20TV.yaml
-    path: ./Rules/Media/Line-TV
+    path: ./Rules/Media/Line_TV
     interval: 86400
   myTV SUPER:
     type: http
     behavior: classical
     url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/myTV%20SUPER.yaml
-    path: ./Rules/Media/myTV-SUPER
+    path: ./Rules/Media/myTV_SUPER
     interval: 86400
   Pandora:
     type: http
