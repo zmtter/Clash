@@ -933,28 +933,28 @@ rule-providers:
   拦截净化-ZMTT:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/ZMTT-REJECT.yaml
     path: ./Rules/ZMTT
     interval: 86400
 
   国内直连-ZMTT:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/ZMTT-DIRECT.yaml
     path: ./Rules/国内直连-ZMTT
     interval: 86400
 
   网速测试:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/Speedtest.yaml
     path: ./Rules/网速测试
     interval: 86400
 
   欧洲金融:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/Europe.yml
     path: ./Rules/欧洲金融
     interval: 86400
 
@@ -1031,14 +1031,14 @@ rule-providers:
   海外抖音:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/TikTok.yaml
     path: ./Rules/海外抖音
     interval: 86400
 
   彩色相机:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/Instagram.yaml
     path: ./Rules/Media/彩色相机
     interval: 86400
 
@@ -1101,7 +1101,7 @@ rule-providers:
   成人视频 Plus:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    url: https://raw.githubusercontent.com/zmtter/Clash/main/Pornhub.yml
     path: ./Rules/Media/成人视频-Plus
     interval: 86400
 
