@@ -1,0 +1,21 @@
+payload:
+# 跨境金融
+  - DOMAIN-SUFFIX,remitly.com
+  - DOMAIN-KEYWORD,eastwest
+  - DOMAIN-SUFFIX,eastwest.com
+  - DOMAIN-KEYWORD,velobank
+  - DOMAIN-SUFFIX,velobank.com
+  - DOMAIN-KEYWORD,payoneer
+
+
+# 电脑日常使用
+  - DOMAIN-KEYWORD,payoneer
+  - DOMAIN-KEYWORD,jianguoyun
+  - DOMAIN-KEYWORD,flomo
+  - DOMAIN-KEYWORD,dingtalk
+  - DOMAIN-KEYWORD,huorong
+  - DOMAIN-KEYWORD,highso
+  - DOMAIN-KEYWORD,haixue
+  - DOMAIN-SUFFIX,haixue.com
+  - DOMAIN-SUFFIX,wiz.cn
+

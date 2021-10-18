@@ -1,0 +1,1303 @@
+---
+port: 8888
+socks-port: 8889
+mixed-port: 8899
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:6170
+experimental:
+  ignore-resolve-fail: true
+clash-for-android:
+  ui-subtitle-pattern: '[一-龥]{2,4}'
+proxies:
+- name: "\U0001F1E8\U0001F1F3 台湾 AIA [East]"
+  type: trojan
+  server: 162.14.13.137
+  port: 258
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 AIA [North]"
+  type: trojan
+  server: 162.14.5.182
+  port: 258
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 AIA [South]"
+  type: trojan
+  server: 162.14.19.131
+  port: 258
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 BGP [01]"
+  type: trojan
+  server: 47.99.141.172
+  port: 258
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 BGP [02]"
+  type: trojan
+  server: 47.99.140.189
+  port: 258
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 AIA [East]"
+  type: trojan
+  server: 162.14.13.137
+  port: 858
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 AIA [North]"
+  type: trojan
+  server: 162.14.5.182
+  port: 858
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 AIA [South]"
+  type: trojan
+  server: 162.14.19.131
+  port: 858
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 BGP [01]"
+  type: trojan
+  server: 47.99.141.172
+  port: 758
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 BGP [02]"
+  type: trojan
+  server: 47.99.140.189
+  port: 758
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 GIA [01]"
+  type: trojan
+  server: degia1.qiangdong.xyz
+  port: 8443
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 GIA [02]"
+  type: trojan
+  server: degia2.qiangdong.xyz
+  port: 8443
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 AIA [East]"
+  type: trojan
+  server: 162.14.13.137
+  port: 458
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 AIA [North]"
+  type: trojan
+  server: 162.14.5.182
+  port: 458
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 AIA [South]"
+  type: trojan
+  server: 162.14.19.131
+  port: 458
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 BGP [01]"
+  type: trojan
+  server: 47.99.141.172
+  port: 458
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 BGP [02]"
+  type: trojan
+  server: 47.99.140.189
+  port: 458
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 IEPL"
+  type: ss
+  server: 120.232.214.242
+  port: 22176
+  cipher: chacha20-ietf
+  password: UE49AluiR1e4
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 日本 AIA [East]"
+  type: trojan
+  server: 162.14.13.137
+  port: 358
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 AIA [North]"
+  type: trojan
+  server: 162.14.5.182
+  port: 358
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 AIA [South]"
+  type: trojan
+  server: 162.14.19.131
+  port: 358
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 BGP [01]"
+  type: trojan
+  server: 47.99.141.172
+  port: 358
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 BGP [02]"
+  type: trojan
+  server: 47.99.140.189
+  port: 358
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 IEPL"
+  type: ss
+  server: 120.232.214.237
+  port: 22176
+  cipher: chacha20-ietf
+  password: UE49AluiR1e4
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 美国 AIA [East]"
+  type: trojan
+  server: 162.14.13.137
+  port: 558
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 AIA [North]"
+  type: trojan
+  server: 162.14.5.182
+  port: 558
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 AIA [South]"
+  type: trojan
+  server: 162.14.19.131
+  port: 558
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 BGP [01]"
+  type: trojan
+  server: 47.99.141.172
+  port: 558
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 BGP [02]"
+  type: trojan
+  server: 47.99.140.189
+  port: 558
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 GIA"
+  type: trojan
+  server: 154.17.0.20
+  port: 8443
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 AIA [East]"
+  type: trojan
+  server: 162.14.13.137
+  port: 958
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 AIA [North]"
+  type: trojan
+  server: 162.14.5.182
+  port: 958
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 AIA [South]"
+  type: trojan
+  server: 162.14.19.131
+  port: 958
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 BGP [01]"
+  type: trojan
+  server: 47.99.141.172
+  port: 858
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 BGP [02]"
+  type: trojan
+  server: 47.99.140.189
+  port: 858
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 AIA [East]"
+  type: trojan
+  server: 162.14.13.137
+  port: 658
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 AIA [North]"
+  type: trojan
+  server: 162.14.5.182
+  port: 658
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 AIA [South]"
+  type: trojan
+  server: 162.14.19.131
+  port: 658
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 BGP [01]"
+  type: trojan
+  server: 47.99.141.172
+  port: 658
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 BGP [02]"
+  type: trojan
+  server: 47.99.140.189
+  port: 658
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 AIA [East]"
+  type: trojan
+  server: 162.14.13.137
+  port: 158
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 AIA [North]"
+  type: trojan
+  server: 162.14.5.182
+  port: 158
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 AIA [South]"
+  type: trojan
+  server: 162.14.19.131
+  port: 158
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 BGP [01]"
+  type: trojan
+  server: 47.99.141.172
+  port: 158
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 BGP [02]"
+  type: trojan
+  server: 47.99.140.189
+  port: 158
+  password: 495e4111796.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL [01]"
+  type: ss
+  server: 120.232.214.15
+  port: 22176
+  cipher: chacha20-ietf
+  password: UE49AluiR1e4
+  udp: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL [02]"
+  type: ss
+  server: 120.232.214.150
+  port: 22176
+  cipher: chacha20-ietf
+  password: UE49AluiR1e4
+  udp: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL [03]"
+  type: ss
+  server: 120.232.214.47
+  port: 22176
+  cipher: chacha20-ietf
+  password: UE49AluiR1e4
+  udp: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL [04]"
+  type: ss
+  server: 120.232.214.80
+  port: 22176
+  cipher: chacha20-ietf
+  password: UE49AluiR1e4
+  udp: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL [05]"
+  type: ss
+  server: 120.232.214.97
+  port: 22176
+  cipher: chacha20-ietf
+  password: UE49AluiR1e4
+  udp: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL [06]"
+  type: ss
+  server: 120.232.214.99
+  port: 22176
+  cipher: chacha20-ietf
+  password: UE49AluiR1e4
+  udp: true
+
+
+proxy-groups:
+- name: 手动切换
+  type: select
+  proxies:
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [East]"
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [North]"
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [South]"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP [01]"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP [02]"
+  - "\U0001F1E9\U0001F1EA 德国 AIA [East]"
+  - "\U0001F1E9\U0001F1EA 德国 AIA [North]"
+  - "\U0001F1E9\U0001F1EA 德国 AIA [South]"
+  - "\U0001F1E9\U0001F1EA 德国 BGP [01]"
+  - "\U0001F1E9\U0001F1EA 德国 BGP [02]"
+  - "\U0001F1E9\U0001F1EA 德国 GIA [01]"
+  - "\U0001F1E9\U0001F1EA 德国 GIA [02]"
+  - "\U0001F1F8\U0001F1EC 新加坡 AIA [East]"
+  - "\U0001F1F8\U0001F1EC 新加坡 AIA [North]"
+  - "\U0001F1F8\U0001F1EC 新加坡 AIA [South]"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP [01]"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP [02]"
+  - "\U0001F1F8\U0001F1EC 新加坡 IEPL"
+  - "\U0001F1EF\U0001F1F5 日本 AIA [East]"
+  - "\U0001F1EF\U0001F1F5 日本 AIA [North]"
+  - "\U0001F1EF\U0001F1F5 日本 AIA [South]"
+  - "\U0001F1EF\U0001F1F5 日本 BGP [01]"
+  - "\U0001F1EF\U0001F1F5 日本 BGP [02]"
+  - "\U0001F1EF\U0001F1F5 日本 IEPL"
+  - "\U0001F1FA\U0001F1F8 美国 AIA [East]"
+  - "\U0001F1FA\U0001F1F8 美国 AIA [North]"
+  - "\U0001F1FA\U0001F1F8 美国 AIA [South]"
+  - "\U0001F1FA\U0001F1F8 美国 BGP [01]"
+  - "\U0001F1FA\U0001F1F8 美国 BGP [02]"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1EC\U0001F1E7 英国 AIA [East]"
+  - "\U0001F1EC\U0001F1E7 英国 AIA [North]"
+  - "\U0001F1EC\U0001F1E7 英国 AIA [South]"
+  - "\U0001F1EC\U0001F1E7 英国 BGP [01]"
+  - "\U0001F1EC\U0001F1E7 英国 BGP [02]"
+  - "\U0001F1F0\U0001F1F7 韩国 AIA [East]"
+  - "\U0001F1F0\U0001F1F7 韩国 AIA [North]"
+  - "\U0001F1F0\U0001F1F7 韩国 AIA [South]"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP [01]"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP [02]"
+  - "\U0001F1ED\U0001F1F0 香港 AIA [East]"
+  - "\U0001F1ED\U0001F1F0 香港 AIA [North]"
+  - "\U0001F1ED\U0001F1F0 香港 AIA [South]"
+  - "\U0001F1ED\U0001F1F0 香港 BGP [01]"
+  - "\U0001F1ED\U0001F1F0 香港 BGP [02]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [01]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [02]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [03]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [04]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [05]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [06]"
+
+- name: 台湾稳定
+  type: select
+  proxies:
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [East]"
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [North]"
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [South]"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP [01]"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP [02]"
+
+- name: 德国稳定
+  type: select
+  proxies:
+  - "\U0001F1E9\U0001F1EA 德国 AIA [East]"
+  - "\U0001F1E9\U0001F1EA 德国 AIA [North]"
+  - "\U0001F1E9\U0001F1EA 德国 AIA [South]"
+  - "\U0001F1E9\U0001F1EA 德国 BGP [01]"
+  - "\U0001F1E9\U0001F1EA 德国 BGP [02]"
+  - "\U0001F1E9\U0001F1EA 德国 GIA [01]"
+  - "\U0001F1E9\U0001F1EA 德国 GIA [02]"
+
+- name: 英国稳定
+  type: select
+  proxies:
+  - "\U0001F1EC\U0001F1E7 英国 AIA [East]"
+  - "\U0001F1EC\U0001F1E7 英国 AIA [North]"
+  - "\U0001F1EC\U0001F1E7 英国 AIA [South]"
+  - "\U0001F1EC\U0001F1E7 英国 BGP [01]"
+  - "\U0001F1EC\U0001F1E7 英国 BGP [02]"
+
+- name: 香港稳定
+  type: select
+  proxies:
+  - "\U0001F1ED\U0001F1F0 香港 AIA [East]"
+  - "\U0001F1ED\U0001F1F0 香港 AIA [North]"
+  - "\U0001F1ED\U0001F1F0 香港 AIA [South]"
+  - "\U0001F1ED\U0001F1F0 香港 BGP [01]"
+  - "\U0001F1ED\U0001F1F0 香港 BGP [02]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [01]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [02]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [03]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [04]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [05]"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL [06]"
+
+- name: 台湾流量
+  type: url-test
+  proxies:
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [East]"
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [North]"
+  - "\U0001F1E8\U0001F1F3 台湾 AIA [South]"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP [01]"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP [02]"
+  url: http://cp.cloudflare.com/generate_204
+  interval: "3600"
+
+- name: 美国流量
+  type: url-test
+  proxies:
+  - "\U0001F1FA\U0001F1F8 美国 AIA [East]"
+  - "\U0001F1FA\U0001F1F8 美国 AIA [North]"
+  - "\U0001F1FA\U0001F1F8 美国 AIA [South]"
+  - "\U0001F1FA\U0001F1F8 美国 BGP [01]"
+  - "\U0001F1FA\U0001F1F8 美国 BGP [02]"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  url: http://cp.cloudflare.com/generate_204
+  interval: "3600"
+
+- name: 狮城流量
+  type: url-test
+  proxies:
+  - "\U0001F1F8\U0001F1EC 新加坡 AIA [East]"
+  - "\U0001F1F8\U0001F1EC 新加坡 AIA [North]"
+  - "\U0001F1F8\U0001F1EC 新加坡 AIA [South]"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP [01]"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP [02]"
+  - "\U0001F1F8\U0001F1EC 新加坡 IEPL"
+  url: http://cp.cloudflare.com/generate_204
+  interval: "3600"
+
+- name: 网速测试
+  type: select
+  proxies:
+  - 台湾稳定
+  - 德国稳定
+  - 手动切换
+  - DIRECT
+  - REJECT
+
+- name: 欧洲金融
+  type: select
+  proxies:
+  - 德国稳定
+  - 英国稳定
+  - DIRECT
+  - REJECT
+
+- name: 贝宝支付
+  type: select
+  proxies:
+  - 台湾稳定
+  - 德国稳定
+  - 英国稳定
+  - 香港稳定
+  - DIRECT
+  - REJECT
+
+- name: 漏网之鱼
+  type: select
+  proxies:
+  - 台湾稳定
+  - 德国稳定
+  - 英国稳定
+  - 香港稳定
+  - DIRECT
+  - REJECT
+
+- name: 谷歌服务
+  type: select
+  proxies:
+  - 台湾稳定
+  - 德国稳定
+  - DIRECT
+  - REJECT
+
+- name: 苹果服务
+  type: select
+  proxies:
+  - 台湾稳定
+  - 德国稳定
+  - DIRECT
+  - REJECT
+
+- name: 奈飞影视
+  type: select
+  proxies:
+  - 台湾流量
+  - 狮城流量
+  - DIRECT
+  - REJECT
+
+- name: 油管视频
+  type: select
+  proxies:
+  - 台湾流量
+  - 狮城流量
+  - DIRECT
+  - REJECT
+
+- name: 海外抖音
+  type: select
+  proxies:
+  - 美国流量
+  - 狮城流量
+  - DIRECT
+  - REJECT
+
+- name: 彩色相机
+  type: select
+  proxies:
+  - 台湾稳定
+  - REJECT
+
+- name: 私密电报
+  type: select
+  proxies:
+  - 台湾流量
+  - 狮城流量
+  - DIRECT
+  - REJECT
+
+- name: 国内网站
+  type: select
+  proxies:
+  - DIRECT
+  - 台湾稳定
+
+- name: 拦截净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+
+- name: 微软服务
+  type: select
+  proxies:
+  - 台湾稳定
+  - 德国稳定
+  - 英国稳定
+  - 香港稳定
+  - DIRECT
+  - REJECT
+
+- name: 国内影视
+  type: select
+  proxies:
+  - DIRECT
+  - REJECT
+
+- name: 国外影视
+  type: select
+  proxies:
+  - 台湾流量
+  - 狮城流量
+  - DIRECT
+  - REJECT
+
+- name: 成人视频
+  type: select
+  proxies:
+  - 台湾流量
+  - 狮城流量
+  - DIRECT
+  - REJECT
+
+
+rules:
+- RULE-SET,国内直连-ZMTT,DIRECT
+- RULE-SET,网速测试,网速测试
+- RULE-SET,网速测试,网速测试
+- RULE-SET,欧洲金融,欧洲金融
+- RULE-SET,贝宝支付,贝宝支付
+- RULE-SET,谷歌服务-Google,谷歌服务
+- RULE-SET,谷歌服务-GoogleCN,谷歌服务
+- RULE-SET,谷歌服务-GoogleFCM,谷歌服务
+- RULE-SET,苹果服务,苹果服务
+- RULE-SET,奈飞影视,奈飞影视
+- RULE-SET,油管视频,油管视频
+- RULE-SET,海外抖音,海外抖音
+- RULE-SET,彩色相机,彩色相机
+- RULE-SET,私密电报,私密电报
+- RULE-SET,国内网站,国内网站
+- RULE-SET,国内网站-IPs,国内网站
+- RULE-SET,拦截净化-lhie1,拦截净化
+- RULE-SET,拦截净化-ZMTT,拦截净化
+- RULE-SET,拦截净化-BanAD,拦截净化
+- RULE-SET,拦截净化-BanEasyList,拦截净化
+- RULE-SET,拦截净化-BanProgramAD,拦截净化
+- RULE-SET,拦截净化-BanEasyPrivacy,拦截净化
+- RULE-SET,拦截净化-BanEasyListChina,拦截净化
+- RULE-SET,微软服务,微软服务
+- RULE-SET,Bilibili,国内影视
+- RULE-SET,iQiyi,国内影视
+- RULE-SET,Letv,国内影视
+- RULE-SET,Netease-Music,国内影视
+- RULE-SET,Tencent-Video,国内影视
+- RULE-SET,Youku,国内影视
+- RULE-SET,WeTV,国内影视
+- RULE-SET,ABC,国外影视
+- RULE-SET,Abema TV,国外影视
+- RULE-SET,Amazon,国外影视
+- RULE-SET,苹果服务-News,国外影视
+- RULE-SET,苹果服务-TV,国外影视
+- RULE-SET,Bahamut,国外影视
+- RULE-SET,BBC-iPlayer,国外影视
+- RULE-SET,DAZN,国外影视
+- RULE-SET,Discovery-Plus,国外影视
+- RULE-SET,encoreTVB,国外影视
+- RULE-SET,Fox-Now,国外影视
+- RULE-SET,Fox+,国外影视
+- RULE-SET,HBO,国外影视
+- RULE-SET,Hulu Japan,国外影视
+- RULE-SET,Hulu,国外影视
+- RULE-SET,Japonx,国外影视
+- RULE-SET,JOOX,国外影视
+- RULE-SET,KKBOX,国外影视
+- RULE-SET,KKTV,国外影视
+- RULE-SET,Line-TV,国外影视
+- RULE-SET,myTV SUPER,国外影视
+- RULE-SET,Pandora,国外影视
+- RULE-SET,PBS,国外影视
+- RULE-SET,Pornhub,国外影视
+- RULE-SET,Soundcloud,国外影视
+- RULE-SET,ViuTV,国外影视
+- RULE-SET,成人视频 Plus,成人视频
+- RULE-SET,LAN,DIRECT
+- GEOIP,CN,国内网站
+- MATCH,漏网之鱼
+
+
+
+script:
+  code: |
+    def main(ctx, metadata):
+        ruleset_action = {"拦截净化-lhie1": "拦截净化",
+            "国内直连-ZMTT": "DIRECT",
+            "奈飞影视": "奈飞影视",
+            "彩色相机": "彩色相机",
+            "油管视频": "油管视频",
+            "成人视频 Plus": "成人视频",
+            "Bilibili": "国内影视",
+            "iQiyi": "国内影视",
+            "Letv": "国内影视",
+            "Netease-Music": "国内影视",
+            "Tencent-Video": "国内影视",
+            "Youku": "国内影视",
+            "WeTV": "国内影视",
+            "ABC": "国外影视",
+            "Abema TV": "国外影视",
+            "Amazon": "国外影视",
+            "苹果服务-News": "国外影视",
+            "苹果服务-TV": "国外影视",
+            "Bahamut": "国外影视",
+            "BBC-iPlayer": "国外影视",
+            "DAZN": "国外影视",
+            "Discovery-Plus": "国外影视",
+            "encoreTVB": "国外影视",
+            "Fox-Now": "国外影视",
+            "Fox+": "国外影视",
+            "HBO": "国外影视",
+            "Hulu Japan": "国外影视",
+            "Hulu": "国外影视",
+            "Japonx": "国外影视",
+            "JOOX": "国外影视",
+            "KKBOX": "国外影视",
+            "KKTV": "国外影视",
+            "Line-TV": "国外影视",
+            "myTV SUPER": "国外影视",
+            "Pandora": "国外影视",
+            "PBS": "国外影视",
+            "Pornhub": "国外影视",
+            "Soundcloud": "国外影视",
+            "ViuTV": "国外影视",
+            "私密电报": "私密电报",
+            "海外抖音": "海外抖音",
+            "网速测试": "网速测试",
+            "贝宝支付": "贝宝支付",
+            "微软服务": "微软服务",
+            "手动切换": "手动切换",
+            "苹果服务": "苹果服务",
+            "欧洲金融": "欧洲金融",
+            "国内网站": "国内网站",
+            "国内网站-IPs": "国内网站",
+            "LAN": "DIRECT"
+          }
+
+        port = int(metadata["dst_port"])
+
+        if metadata["network"] == "UDP":
+            if port == 443:
+                ctx.log('[Script] matched QUIC traffic use reject')
+                return "REJECT"
+
+        port_list = [21, 22, 23, 53, 80, 123, 143, 194, 443, 465, 587, 853, 993, 995, 998, 2052, 2053, 2082, 2083, 2086, 2095, 2096, 5222, 5228, 5229, 5230, 8080, 8443, 8880, 8888, 8889]
+        if port not in port_list:
+            ctx.log('[Script] not common port use direct')
+            return "DIRECT"
+
+        if metadata["dst_ip"] == "":
+            metadata["dst_ip"] = ctx.resolve_ip(metadata["host"])
+
+        for ruleset in ruleset_action:
+            if ctx.rule_providers[ruleset].match(metadata):
+                return ruleset_action[ruleset]
+
+        if metadata["dst_ip"] == "":
+            return "DIRECT"
+
+        code = ctx.geoip(metadata["dst_ip"])
+        if code == "CN":
+            ctx.log('[Script] Geoip CN')
+            return "国内网站"
+
+        ctx.log('[Script] FINAL')
+        return "漏网之鱼"
+
+
+rule-providers:
+
+  拦截净化-lhie1:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Reject.yaml
+    path: ./Rules/拦截净化-lhie1
+    interval: 86400
+
+  拦截净化-ZMTT:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: ./Rules/ZMTT
+    interval: 86400
+
+  国内直连-ZMTT:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: ./Rules/国内直连-ZMTT
+    interval: 86400
+
+  网速测试:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: ./Rules/网速测试
+    interval: 86400
+
+  欧洲金融:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: ./Rules/欧洲金融
+    interval: 86400
+
+  贝宝支付:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/PayPal.yaml
+    path: ./Rules/贝宝支付
+    interval: 86400
+
+  谷歌服务-Google:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Google.yaml
+    path: ./Rules/谷歌服务-Google
+    interval: 86400
+
+  谷歌服务-GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleCN.yaml
+    path: ./Rules/谷歌服务-GoogleFCM
+    interval: 86400
+
+  谷歌服务-GoogleFCM:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GoogleFCM.yaml
+    path: ./Rules/谷歌服务-GoogleFCM
+    interval: 86400
+
+  苹果服务:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Apple.yaml
+    path: ./Rules/苹果服务
+    interval: 86400
+
+  苹果服务-News:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Apple%20News.yaml
+    path: ./Rules/Media/苹果服务-News
+    interval: 86400
+  
+  苹果服务-TV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Apple%20TV.yaml
+    path: ./Rules/Media/苹果服务-TV
+    interval: 86400
+
+  微软服务:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Microsoft.yaml
+    path: ./Rules/微软服务
+    interval: 86400
+
+  奈飞影视:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Netflix.yaml
+    path: ./Rules/Media/奈飞影视
+    interval: 86400
+
+  油管视频:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/YouTube.yaml
+    path: ./Rules/Media/油管视频
+    interval: 86400
+
+  海外抖音:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: ./Rules/海外抖音
+    interval: 86400
+
+  彩色相机:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: ./Rules/Media/彩色相机
+    interval: 86400
+
+  私密电报:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: ./Rules/私密电报
+    interval: 86400
+
+  拦截净化-BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
+    path: ./Rules/私密电报
+    interval: 86400
+
+  拦截净化-BanEasyList:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml
+    path: ./Rules/私密电报
+    interval: 86400
+
+  拦截净化-BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
+    path: ./Rules/私密电报
+    interval: 86400
+
+  拦截净化-BanEasyPrivacy:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml
+    path: ./Rules/私密电报
+    interval: 86400
+
+  拦截净化-BanEasyListChina:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
+    path: ./Rules/私密电报
+    interval: 86400
+
+  国内网站:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Domestic.yaml
+    path: ./Rules/国内网站
+    interval: 86400
+
+  国内网站-IPs:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Domestic%20IPs.yaml
+    path: ./Rules/国内网站-IPs
+    interval: 86400
+
+  成人视频 Plus:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: ./Rules/Media/成人视频-Plus
+    interval: 86400
+
+  Bilibili:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Bilibili.yaml
+    path: ./Rules/Media/Bilibili
+    interval: 86400
+  iQiyi:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/iQiyi.yaml
+    path: ./Rules/Media/iQiyi
+    interval: 86400
+  Letv:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Letv.yaml
+    path: ./Rules/Media/Letv
+    interval: 86400
+  Netease-Music:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Netease%20Music.yaml
+    path: ./Rules/Media/Netease-Music
+    interval: 86400
+  Tencent-Video:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Tencent%20Video.yaml
+    path: ./Rules/Media/Tencent-Video
+    interval: 86400
+  Youku:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Youku.yaml
+    path: ./Rules/Media/Youku
+    interval: 86400
+  WeTV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/WeTV.yaml
+    path: ./Rules/Media/WeTV
+    interval: 86400
+  ABC:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/ABC.yaml
+    path: ./Rules/Media/ABC
+    interval: 86400
+  Abema TV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Abema%20TV.yaml
+    path: ./Rules/Media/Abema-TV
+    interval: 86400
+  Amazon:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Amazon.yaml
+    path: ./Rules/Media/Amazon
+    interval: 86400
+
+  Bahamut:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Bahamut.yaml
+    path: ./Rules/Media/Bahamut
+    interval: 86400
+  BBC-iPlayer:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/BBC%20iPlayer.yaml
+    path: ./Rules/Media/BBC-iPlayer
+    interval: 86400
+  DAZN:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/DAZN.yaml
+    path: ./Rules/Media/DAZN
+    interval: 86400
+  Discovery-Plus:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Discovery%20Plus.yaml
+    path: ./Rules/Media/Discovery-Plus
+    interval: 86400
+
+  encoreTVB:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/encoreTVB.yaml
+    path: ./Rules/Media/encoreTVB
+    interval: 86400
+  Fox-Now:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Fox%20Now.yaml
+    path: ./Rules/Media/Fox-Now
+    interval: 86400
+  Fox+:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Fox%2B.yaml
+    path: ./Rules/Media/Fox+
+    interval: 86400
+  HBO:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/HBO.yaml
+    path: ./Rules/Media/HBO
+    interval: 86400
+  Hulu Japan:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Hulu%20Japan.yaml
+    path: ./Rules/Media/Hulu-Japan
+    interval: 86400
+  Hulu:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Hulu.yaml
+    path: ./Rules/Media/Hulu
+    interval: 86400
+  Japonx:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Japonx.yaml
+    path: ./Rules/Media/Japonx
+    interval: 86400
+  JOOX:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/JOOX.yaml
+    path: ./Rules/Media/JOOX
+    interval: 86400
+  KKBOX:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/KKBOX.yaml
+    path: ./Rules/Media/KKBOX
+    interval: 86400
+  KKTV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/KKTV.yaml
+    path: ./Rules/Media/KKTV
+    interval: 86400
+  Line-TV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Line%20TV.yaml
+    path: ./Rules/Media/Line-TV
+    interval: 86400
+  myTV SUPER:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/myTV%20SUPER.yaml
+    path: ./Rules/Media/myTV-SUPER
+    interval: 86400
+  Pandora:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Pandora.yaml
+    path: ./Rules/Media/Pandora
+    interval: 86400
+  PBS:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/PBS.yaml
+    path: ./Rules/Media/PBS
+    interval: 86400
+  Pornhub:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Pornhub.yaml
+    path: ./Rules/Media/Pornhub
+    interval: 86400
+  Soundcloud:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Soundcloud.yaml
+    path: ./Rules/Media/Soundcloud
+    interval: 86400
+  ViuTV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/ViuTV.yaml
+    path: ./Rules/Media/ViuTV
+    interval: 86400
+
+  LAN:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/LAN.yaml
+    path: ./Rules/LAN
+    interval: 86400
+...
