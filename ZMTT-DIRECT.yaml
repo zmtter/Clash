@@ -8,9 +8,8 @@ payload:
   - DOMAIN-KEYWORD,payoneer
 
   # 瑞讯MT4交易所
-  - DOMAIN-SUFFIX,cn.swissquote.com
-  - DOMAIN-SUFFIX,en.swissquote.com
-  - DOMAIN-SUFFIX,trade.mql5.com
+  - DOMAIN-SUFFIX,swissquote.com
+  - DOMAIN,trade.mql5.com
 
   # 电脑日常使用
   - DOMAIN-KEYWORD,payoneer
