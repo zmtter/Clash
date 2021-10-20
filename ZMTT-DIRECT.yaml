@@ -7,6 +7,8 @@ payload:
   - DOMAIN-SUFFIX,velobank.com
   - DOMAIN-KEYWORD,payoneer
 
+# 瑞讯MT4交易所
+  - DOMAIN-SUFFIX,cn.swissquote.com
 
   # 电脑日常使用
   - DOMAIN-KEYWORD,payoneer
