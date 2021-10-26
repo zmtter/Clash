@@ -2,4 +2,5 @@ payload:
   # 瑞讯相关
   - DOMAIN-SUFFIX,swissquote.ch
   - DOMAIN-SUFFIX,swissquote.com
+  - DOMAIN-SUFFIX,swissquote.info
   - DOMAIN-SUFFIX,mql5.com
