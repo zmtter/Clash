@@ -7,6 +7,9 @@ payload:
   - DOMAIN-SUFFIX,velobank.com
   - DOMAIN-KEYWORD,payoneer
 
+  # 瑞讯外汇交易
+  - DOMAIN-SUFFIX,mql5.com
+
   # 电脑日常使用
   - DOMAIN-KEYWORD,payoneer
   - DOMAIN-KEYWORD,jianguoyun
